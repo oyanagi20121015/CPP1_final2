@@ -1,0 +1,25 @@
+const className = msg.payload[0].class;
+
+msg.payload = {};
+
+msg.payload.events = [
+
+    {
+
+        "type": "message",
+
+        "replyToken": msg.replyToken,
+
+        "message": {
+
+        "type": "text",
+
+        "text": `これは「${className}」かな`
+
+        }
+
+    }
+
+];
+
+return msg;
