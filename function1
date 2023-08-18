@@ -1,0 +1,13 @@
+const messageID = msg.payload.events[0].message.id;
+
+const replyToken = msg.payload.events[0].replyToken;
+
+ 
+
+msg.messageID = messageID;
+
+msg.replyToken = replyToken;
+
+ 
+
+return msg;
